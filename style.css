@@ -71,7 +71,7 @@ body{
   flex-direction: column;
   align-items: center;
   gap:24px;
-  margin: 10px 260px 10px 275px;
+  margin: 1rem 7rem 3rem 7rem;
 }
 
 .conteudo-secundario-titulo{
@@ -115,4 +115,33 @@ body{
 .conteudo-principal-botao:hover{
   background-color: #50703b;
   color: #91bd75;
+}
+
+@media (max-width: 768px) {
+  .conteudo-principal{
+    margin: 5rem;
+  }
+  .conteudo-principal-comandos{
+    font-size: 19px;
+  }
+}
+@media (max-width: 360px) {
+  .conteudo{
+    margin: 1rem 2rem 4rem 4rem;
+  }
+.conteudo-principal{
+  display:flex;
+  flex-direction:column;
+}
+  .cabecalho-imagem{
+    margin: 0rem 1rem 1rem 5rem;
+  }
+  .conteudo-secundario{
+    margin: 1rem -4rem 0rem -1rem;
+  }
+  .conteudo-principal-botao{
+    width: 22rem;
+    height: 77px;
+    font-size: 20px;
+  }
 }
